@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPS Tracker Dashboard</title>
+
+  <link rel="stylesheet" href="styleGPS.css">
+
+  <!-- Leaflet Map Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+  <!-- MQTT.js -->
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>🗺️ GPS Tracker - Ma9arouna kedheba</h1>
+  <h3>Real-time Location Tracking</h3>
+</header>
+
+<main>
+  <!-- Map Container -->
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <!-- GPS Info Cards -->
+  <div class="info-grid">
+    <div class="card">
+      <h3>📍 Latitude</h3>
+      <p id="latitude">--</p>
+    </div>
+
+    <div class="card">
+      <h3>📍 Longitude</h3>
+      <p id="longitude">--</p>
+    </div>
+
+    <div class="card">
+      <h3>📏 Altitude</h3>
+      <p id="altitude">-- m</p>
+    </div>
+
+    <div class="card">
+      <h3>🛰️ Satellites</h3>
+      <p id="satellites">--</p>
+    </div>
+
+    <div class="card">
+      <h3>📡 HDOP (Accuracy)</h3>
+      <p id="hdop">--</p>
+    </div>
+
+    <div class="card">
+      <h3>⏰ Last Update</h3>
+      <p id="lastUpdate">--</p>
+    </div>
+  </div>
+
+</main>
+
+<script src="scriptGPS.js"></script>
+</body>
+</html>
