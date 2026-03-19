@@ -31,7 +31,7 @@ By completing this project, students will learn:
 ## 🛠️ Hardware Required (Elementary Level)
 ESP32 DevKit + NEO-6M GPS Module + wires + mqqt broker on pc
 
-![GPS_wiring](images/gpswiring.webp)
+![GPS_wiring](gpswiring.webp)
 
 ## ✨ How it works
 SATELLITE CONSTELLATION (Provides GPS coordinates to module)>> NEO-6M GPS MODULE (RX=16, TX=17, 9600bd) >> ESP32 Microcontroller (Reads GPS data+Processes coordinates+Publishes via MQTT (WiFi)) >> Mosquitto MQTT Broker (localhost:1883) >> (WebSocket) >> Web Browser Dashboard(Leaflet Map ++ Real-time markers ++ GPS data cards ++ Journey tracking)
