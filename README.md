@@ -1,7 +1,7 @@
 🚗 GPS Vehicle Tracking Dashboard
 [An Elementary IoT Project for Robotics & Automotive Students]
 
-![GPS Dashboard](images/dashboard.png)
+![GPS Dashboard](dashboard.jpg)
 
 ## 📋 Project Overview
 
@@ -31,13 +31,12 @@ By completing this project, students will learn:
 ## 🛠️ Hardware Required (Elementary Level)
 ESP32 DevKit + NEO-6M GPS Module + wires + mqqt broker on pc
 
-![GPS_wiring](images/gpswiring.png)
+![GPS_wiring](images/gpswiring.webp)
 
 ## ✨ How it works
 SATELLITE CONSTELLATION (Provides GPS coordinates to module)>> NEO-6M GPS MODULE (RX=16, TX=17, 9600bd) >> ESP32 Microcontroller (Reads GPS data+Processes coordinates+Publishes via MQTT (WiFi)) >> Mosquitto MQTT Broker (localhost:1883) >> (WebSocket) >> Web Browser Dashboard(Leaflet Map ++ Real-time markers ++ GPS data cards ++ Journey tracking)
 
 ## 📡 GPS Information Cards (Below Map)
-![GPS Cards](images/gps-cards.png)
 
 📍 LATITUDE - Vertical Position
 📍 LONGITUDE - Horizontal Position
